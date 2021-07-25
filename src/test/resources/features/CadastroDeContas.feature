@@ -5,13 +5,14 @@ Funcionalidade: Cadastro de contas
   Gostaria de cadastrar contas
   Para que eu possa distribuir meu dinheiro de uma forma mais organizada
 
-
-  Cenário: Deve inserir uma conta com sucesso
+  Contexto:
     Dado que estou acessando a aplicação
     Quando informo o usuário "mi@m"
     E a senha "mi"
     E seleciono entrar
     Então visualizo a página inicial
+
+  Cenário: Deve inserir uma conta com sucesso
     Quando seleciono Contas
     E seleciono Adicionar
     E informo a conta "Conta de Teste"
@@ -20,11 +21,6 @@ Funcionalidade: Cadastro de contas
 
 
   Cenário: Não deve inserir uma conta sem nome
-    Dado que estou acessando a aplicação
-    Quando informo o usuário "mi@m"
-    E a senha "mi"
-    E seleciono entrar
-    Então visualizo a página inicial
     Quando seleciono Contas
     E seleciono Adicionar
     E seleciono Salvar
@@ -32,11 +28,6 @@ Funcionalidade: Cadastro de contas
 
 
   Cenário: Não deve inserir uma conta com nome já existente
-    Dado que estou acessando a aplicação
-    Quando informo o usuário "mi@m"
-    E a senha "mi"
-    E seleciono entrar
-    Então visualizo a página inicial
     Quando seleciono Contas
     E seleciono Adicionar
     E informo a conta "Conta mesmo nome"
