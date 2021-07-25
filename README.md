@@ -1,5 +1,5 @@
 # selenium-cucumber
-Testando uma aplicação com Selenium WebDriver e cucumber 
+Automatizando o teste de uma aplicação com Selenium WebDriver e cucumber 
 
 Tecnologias aplicada 
 - Selenium WebDriver 
