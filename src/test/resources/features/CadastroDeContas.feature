@@ -12,6 +12,7 @@ Funcionalidade: Cadastro de contas
     E seleciono entrar
     Então visualizo a página inicial
 
+  @issue=1
   Cenário: Deve inserir uma conta com sucesso
     Quando seleciono Contas
     E seleciono Adicionar
@@ -19,14 +20,14 @@ Funcionalidade: Cadastro de contas
     E seleciono Salvar
     Então a conta é inserida com sucesso
 
-
+  @issue=2
   Cenário: Não deve inserir uma conta sem nome
     Quando seleciono Contas
     E seleciono Adicionar
     E seleciono Salvar
     Então sou notificar que o nome da conta é obrigatório
 
-
+  @issue=3
   Cenário: Não deve inserir uma conta com nome já existente
     Quando seleciono Contas
     E seleciono Adicionar
